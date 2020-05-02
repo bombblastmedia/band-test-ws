@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching for Musicians</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">Music.man</a>
+            </header>
+            <h1><span>Get Muscians</span> Here</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consequuntur, consequatur</p>
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="musician">Look for Musicians</label>
+                        <input type="text" name="musician" id="musician">
+                        <p>example: Elton John</p>
+                    </div>
+                    <input type="button" value="find musician" id="cta-btn">
+
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="about">
+        <div class="right-col">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit modi, eaque quisquam eligendi obcaecati, error maxime amet animi hic facere quis minus accusantium. Asperiores quos eum temporibus error enim sint.</p>
+        </div>
+        <img src="images\person-holding-microphone-on-stage-2247677.jpg" alt="singer on stage">
+
+    </section>
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+    </script>
+</body>
+
+</html>
